@@ -7,28 +7,52 @@
         "driver": {
           "name": "ESLint",
           "informationUri": "https://eslint.org",
-          "rules": [],
+          "rules": [
+            {
+              "id": "no-eval",
+              "helpUri": "https://eslint.org/docs/rules/no-eval",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow the use of `eval()`"
+              }
+            }
+          ],
           "version": "8.36.0"
         }
       },
       "artifacts": [
         {
           "location": {
-            "uri": "file:///mnt/c/Users/ngten/Desktop/ICT2216/Week%209/react-unit-testing/src/index.js"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///mnt/c/Users/ngten/Desktop/ICT2216/Week%209/react-unit-testing/src/setupTests.js"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///mnt/c/Users/ngten/Desktop/ICT2216/Week%209/react-unit-testing/src/utils/services.js"
+            "uri": "file:///mnt/c/Users/ngten/Desktop/ICT2216/Week%209/react-unit-testing/test.js"
           }
         }
       ],
-      "results": []
+      "results": [
+        {
+          "level": "warning",
+          "message": {
+            "text": "eval can be harmful."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///mnt/c/Users/ngten/Desktop/ICT2216/Week%209/react-unit-testing/test.js",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 5
+                }
+              }
+            }
+          ],
+          "ruleId": "no-eval",
+          "ruleIndex": 0
+        }
+      ]
     }
   ]
 }
